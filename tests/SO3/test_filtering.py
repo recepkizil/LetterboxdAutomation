@@ -84,6 +84,8 @@ class Test_Filtering(functions):
         self.driver.execute_script("window.scrollBy(0,150)")
         self.waitForElementClickable(GENRES2).click()
         genre2 = self.waitForElementVisible(GENRE_CHECK2)
-        assert genre2.text == "Drama"
+        assert genre2.text == "Drama" 
+
+    
 
 
