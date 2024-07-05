@@ -8,7 +8,7 @@ USERNAME_INPUT = (By.XPATH,"//html[@id='html']//input[@id='username']")
 PASSWORD_INPUT = (By.XPATH, "//html[@id='html']//input[@id='password']")
 SIGN_IN_BUTTON = (By.XPATH, "//html[@id='html']//form[@id='signin']/fieldset[@class='fieldset']//input[@value='Sign in']")
 USERNAME = "testerhesabim"
-PASSWORD = "Receprecep123"
+PASSWORD = "Receprecep123."
 
 
 #SO1 - SEARCHING
@@ -61,8 +61,9 @@ POPULAR = (By.XPATH, "//html[@id='html']//div[@id='content']//section[@class='br
 THIS_YEAR = (By.XPATH, "//html[@id='html']/body/ul[3]//a[@href='/films/popular/this/year/']")
 FIRST_FILM = (By.CSS_SELECTOR, ".film-poster-617443 .overlay")
 
-OTHER = (By.CSS_SELECTOR, ".smenu-menu:nth-child(14) > .smenu-selected")
-COUNTRY_LANGUAGE = (By.XPATH, "//html[@id='html']/body/ul[6]//a[@href='/countries/']]")
+OTHER = (By.XPATH, "//html[@id='html']//div[@id='content']//section[@class='browse-by']/ul[@class='bar-nav']/li[6]/section[@class='smenu-wrapper']/div[@class='smenu']/label")
+COUNTRY_LANGUAGE = (By.XPATH, "//html[@id='html']/body/ul[6]//a[@href='/countries/']")
+TURKIYE = (By.ID, "film-world-map-map-country-TR")
 
 BROWSE_BY_GENRE2 = (By.XPATH, "//html[@id='html']//div[@id='content-nav']/div[1]/section[5]/div[@class='smenu']/label")
 GENRE_DRAMA2 = (By.XPATH, "//html[@id='html']/body/ul[4]/li[@class='divider-line']/ul//a[@href='/films/popular/year/2024/genre/drama/']")
@@ -70,3 +71,39 @@ PICK_FIRST = (By.CSS_SELECTOR, ".film-poster-842301 .overlay")
 MOVIE_YEAR2 = (By.XPATH, "//html[@id='html']//div[@id='film-page-wrapper']//section[@class='film-header-group']//a[@href='/films/year/2024/']")
 GENRES2 = (By.XPATH, "//html[@id='html']//div[@id='tabbed-content']//a[@href='/film/challengers/genres/']")
 GENRE_CHECK2 = (By.CSS_SELECTOR, "div#tab-genres > div:nth-of-type(1) > p > a:nth-of-type(1)")
+
+#SO4
+SEARCHBAR_XPATH2 = (By.XPATH,"//html[@id='html']//header[@id='header']//nav[@class='main-nav']/ul[@class='navitems']/li[7]/a[@href='#']")
+SEARCHBAR_INPUT = (By.XPATH, "//html[@id='html']//input[@id='search-q']")
+CREW = (By.XPATH, "//html[@id='html']//a[@id='crew']")
+DETAILS = (By.XPATH, "//html[@id='html']//div[@id='tabbed-content']//a[@href='/film/inside-out-2-2024/details/']")
+LEAVE_COMMENT = (By.XPATH, "//html[@id='html']//section[@id='userpanel']//a[@href='#add-this-film']")
+COMMENT_INPUT = (By.XPATH, "//*[@id='frm-review']")
+COMMENT_INPUT_AREA = (By.XPATH, "//html[@id='html']//textarea[@id='frm-review']")
+comment = "I loved it"
+COMMENT_SUBMIT = (By.XPATH, "//html[@id='html']//input[@id='diary-entry-submit-button']")
+
+MYACCOUNT = (By.XPATH, "/html/body/header/section/div[1]/div/nav/ul/li[1]")
+MYREVIEWS = (By.XPATH, "//html[@id='html']//header[@id='header']//nav[@class='main-nav']/ul[@class='navitems']//ul[@class='subnav']//a[@href='/testerhesabim/films/reviews/']")
+
+COMMENT_TEXT_AREA = (By.XPATH, "//html[@id='html']//div[@id='content']/div/section[2]/ul//p[.='I loved it']")
+my_comment = "I loved it"
+
+#SO5
+MOVIE_NAME_5 = "Dune"
+MOVIE5 = (By.XPATH,"//html[@id='html']//div[@id='content']/div[@class='content-wrap']/div/section/ul[@class='results']/li[1]/div[@class='film-detail-content']/h2[@class='headline-2 prettify']/span[@class='film-title-wrapper']/a[@href='/film/dune-2021/']")
+comment2 = "Great movie"
+
+SIGN_OUT = (By.XPATH, "//html[@id='html']//a[@id='sign-out']")
+
+
+#SO6
+comment3 = "My favorite movie"
+YOUR_REVIEW = (By.XPATH,"//html[@id='html']//section[@id='my-reviews']//a[@href='/testerhesabim/film/dune-2021/reviews/']")
+ACTIVITIES = (By.XPATH,"//html[@id='html']//header[@id='header']//nav[@class='main-nav']/ul[@class='navitems']//a[@href='/activity/']/span[@class='icon']")
+EDIT_BUTTON = (By.XPATH,"//html[@id='html']//table[@id='diary-table']/tbody/tr[1]/td[9]//a[@href='#']/span[@class='icon']")
+CLOSE_BUTTON = (By.XPATH, "//html[@id='html']//div[@id='cboxClose']")
+DIARY = (By.XPATH,"//html[@id='html']//div[@id='content']/div/section//a[@href='/testerhesabim/films/diary/']")
+DELETE_BUTTON = (By.XPATH,"//html[@id='html']//a[@id='diary-entry-delete-button']")
+
+
