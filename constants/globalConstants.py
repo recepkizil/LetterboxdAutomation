@@ -61,7 +61,7 @@ POPULAR = (By.XPATH, "//html[@id='html']//div[@id='content']//section[@class='br
 THIS_YEAR = (By.XPATH, "//html[@id='html']/body/ul[3]//a[@href='/films/popular/this/year/']")
 FIRST_FILM = (By.CSS_SELECTOR, ".film-poster-617443 .overlay")
 
-OTHER = (By.XPATH, "//html[@id='html']//div[@id='content']//section[@class='browse-by']/ul[@class='bar-nav']/li[6]/section[@class='smenu-wrapper']/div[@class='smenu']/label")
+OTHER = (By.XPATH, "/html/body/div[2]/div[3]/section[1]/ul/li[6]/section/div/label/i")
 COUNTRY_LANGUAGE = (By.XPATH, "//html[@id='html']/body/ul[6]//a[@href='/countries/']")
 TURKIYE = (By.ID, "film-world-map-map-country-TR")
 
@@ -83,7 +83,7 @@ COMMENT_INPUT_AREA = (By.XPATH, "//html[@id='html']//textarea[@id='frm-review']"
 comment = "I loved it"
 COMMENT_SUBMIT = (By.XPATH, "//html[@id='html']//input[@id='diary-entry-submit-button']")
 
-MYACCOUNT = (By.XPATH, "/html/body/header/section/div[1]/div/nav/ul/li[1]")
+MYACCOUNT = (By.XPATH, "/html/body/header/section/div[1]/div/nav/ul/li[1]/a/span[1]")
 MYREVIEWS = (By.XPATH, "//html[@id='html']//header[@id='header']//nav[@class='main-nav']/ul[@class='navitems']//ul[@class='subnav']//a[@href='/testerhesabim/films/reviews/']")
 
 COMMENT_TEXT_AREA = (By.XPATH, "//html[@id='html']//div[@id='content']/div/section[2]/ul//p[.='I loved it']")

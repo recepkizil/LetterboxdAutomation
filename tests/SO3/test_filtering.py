@@ -63,13 +63,16 @@ class Test_Filtering(functions):
         assert movie_year.text == "2024"
     
 # #TC06
-#     def test_filter_by_other(self):
-#         self.waitForElementClickable(FILMS_XPATH).click()
-#         self.waitForElementClickable(OTHER).click()
-#         self.waitForElementClickable(COUNTRY_LANGUAGE).click()
-#         self.waitForElementClickable(TURKIYE).click() HATA BURDA MUHTEMELEN
-#         self.newTab() YENİ SEKMEYE GEÇMİYOR
-#         assert "/films/country/turkey/" in self.driver.current_url
+    def test_filter_by_other(self):
+        self.waitForElementClickable(FILMS_XPATH).click()
+        time.sleep(2)
+        other = self.waitForElementClickable(OTHER)
+        self.moveToElement(other)
+        self.waitForElementClickable(COUNTRY_LANGUAGE).click()
+        self.waitForElementClickable(TURKIYE).click()
+        time.sleep(2) 
+        self.newTab() 
+        assert "/films/country/turkey/" in self.driver.current_url
 
 #TC07
     def test_multiple_filtering(self):

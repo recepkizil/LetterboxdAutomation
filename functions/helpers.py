@@ -22,7 +22,7 @@ class functions:
         window_after = self.driver.window_handles[-1]
         self.driver.switch_to.window(window_after)
 
-    def actions(self, locator):
+    def moveToElement(self, locator):
         actions = ActionChains(self.driver)
         actions.move_to_element(locator).perform()
 
