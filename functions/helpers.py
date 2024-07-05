@@ -22,9 +22,9 @@ class functions:
         window_after = self.driver.window_handles[-1]
         self.driver.switch_to.window(window_after)
 
-    # def actions(self, locator):
-    #     actions = ActionChains(self.driver)
-    #     actions.move_to_element(locator).perform()
+    def actions(self, locator):
+        actions = ActionChains(self.driver)
+        actions.move_to_element(locator).perform()
 
     def succesful_login(self):
         self.waitForElementVisible(SIGN_IN_XPATH).click()

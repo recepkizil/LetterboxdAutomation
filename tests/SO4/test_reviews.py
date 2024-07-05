@@ -34,11 +34,9 @@ class Test_Filtering(functions):
         self.waitForElementVisible(COMMENT_SUBMIT).click()
 
 #TC03
-    # def test_checking_comments(self):
-    #     self.succesful_login()
-    #     # myaccount = self.waitForElementVisible(MYACCOUNT)
-    #     # self.actions(myaccount)
-    #     self.waitForElementVisible(MYACCOUNT).click()
-    #     self.waitForElementClickable(MYREVIEWS).click()
-    #     comment = self.waitForElementVisible(COMMENT_TEXT_AREA)
-    #     assert comment.text == my_comment
+    def test_checking_comments(self):
+        self.succesful_login()
+        self.waitForElementVisible(ACTIVITIES).click()
+        self.waitForElementVisible(DIARY).click()
+        self.take_screenshot("screenshots/latest_reviews.png")
+        
